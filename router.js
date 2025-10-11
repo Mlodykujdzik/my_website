@@ -22,6 +22,9 @@ async function loadView() {
         const staticPages = {
             "minecraft-server": "pages/project-minecraft-server.html",
             "ambilight-tv": "pages/project-ambilight-tv.html",
+            "andromeda": "pages/project-andromeda.html",
+            "nextcloud": "pages/project-nextcloud.html",
+            "new-minecraft-server": "pages/project-new-minecraft-server.html",
         };
 
         const pagePath = staticPages[param];
