@@ -1,42 +1,72 @@
-<section>
-    <h1>Serwer Minecraft</h1>
-    <img src="assets/minecraft.webp" alt="Minecraft Server" class="project-img" />
-    <p>
-        Projekt powstał z potrzeby stworzenia prywatnego serwera Minecraft do wspólnej gry ze znajomymi. Do tej pory korzystałem z płatnych hostingów,
-        jednak postanowiłem wykorzystać swój „stary” komputer i zbudować wszystko samodzielnie.
-    </p>
-    <h2>Obudowa</h2>
-    <img src="assets/minecraft-server3.webp" alt="Obudowa" class="project-img" />
-    <p>
-        Aby serwer zajmował jak najmniej miejsca, stwierdziłem że zaprojektuję własną kompaktową obudowę. Projekt przygotowałem w programie
-        <strong>Inkscape</strong>, a została ona wycięta w drewnie za pomocą graweru laserowego <strong>Atomstack S20 Pro</strong> i programu
-        <strong>LaserGRBL</strong>. Wszystkie elementy łączą się bez śrub - konstrukcja opiera się na idealnie spasowanych otworach i wypustkach.
-    </p>
-    <p>Ostateczne wymiary obudowy to 15x27x33 cm, co pozwoliło schować serwer za monitorem</p>
-    <img src="assets/minecraft-server2.webp" alt="Obudowa" class="project-img" />
-    <h2>Specyfikacja sprzętu</h2>
-    <ul>
-        <li><strong>CPU:</strong> Intel i5-9600K</li>
-        <li><strong>Chłodzenie</strong> Deepcool AN600</li>
-        <li><strong>RAM:</strong> 32 GB DDR4 3200MHz</li>
-        <li><strong>Dysk:</strong> SSD M.2 Plextor 128GB</li>
-        <li><strong>Płyta główna:</strong> Asus Z370-PII</li>
-        <li><strong>Zasilacz:</strong> SilentiumPC Vero M1 600W</li>
-    </ul>
-    <img src="assets/minecraft-server1.webp" alt="Sprzęt" class="project-img" />
-    <h2>Oprogramowanie i zarządzanie</h2>
-    <p>
-        Serwer działał na systemie <strong>Ubuntu Server</strong> a do zarządzania instancjami Minecrafta wykorzystałem platformę
-        <a href="https://craftycontrol.com/" target="_blank">Crafty Control</a>.
-    </p>
-    <img src="assets/crafty.webp" alt="crafty" class="project-img" />
-    <p>
-        Dostęp do serwera zrealizowany został przez <a href="https://www.noip.com/" target="_blank">No-IP</a> w połączeniu z funkcją DynDNS w routerze, co
-        pozwalało automatycznie aktualizować zmienny adres IP.
-    </p>
-    <p>
-        W tym momencie pracuję nad znacznie ulepszonym serwerem który już służy do hostowania tej strony, a w przyszłości ma pozwolić na hostowanie kilku
-        instancji minecrafta jednocześnie.
-    </p>
+<section class="project">
+    <div class="project-content">
+        <div class="project-text">
+            <h1>Serwer Minecraft</h1>
+            <p>Dokładnej daty nie pamiętam, ale projekt zrodził się latem 2024 roku.</p>
+        </div>
+        <div class="project-img">
+            <img src="assets/minecraft.webp" alt="Minecraft Server" class="project-photo" />
+        </div>
+        <div class="project-text">
+            <p>
+                Pomysł powstał z potrzeby stworzenia prywatnego serwera Minecraft do wspólnej gry ze znajomymi. 
+                Do tej pory korzystałem z płatnych hostingów, więc tak naprawdę jedyne co robiłem to administracji już gotową infrastrukturą.
+                Tym razem jednak postanowiłem że wykorzystam części koputerowe pozostałe po rozbudowie mojego prywatnego koputera i postaram się zbudować
+                serwer samodzielnie. Chciałem wykorzystać ten projekt jako okazję do nauki i eksperymentowania.
+
+            </p>
+        </div>
+        <div class="project-img">
+            <img src="assets/minecraft-server3.webp" alt="Obudowa" class="project-photo" />
+        </div>
+        <div class="project-text">
+            <p>
+                Pierwszym problemem jednak było znalezienie odpowiedniego miejsca na serwer. Jako że nie chciałem aby rzucał się w oczy, 
+                stwierdziłem że najlepszym miejscem będzie luka między monitorem a ścianą. Nie mogłem jednak znaleźć gotowej obudowy, która była mała i jednocześnie mieściłą płytę w rozmiarze ATX.
+                Pomyślałem zatem że zaprojektuję własną kompaktową obudowę (co może pójść nie tak?). Obudowę zaprojektowałem tak aby konstrukcja opierała się
+                na dokładnie spasowanych otworach i wypustach co ostatecznie wymagało kilku prób wycięcia aby ostatecznie wszystko było dopasowane.
+                Sam projekt zaprojektowałem w <strong>Inkscape</strong> i wyciąłem w drewnianej sklejce za pomocą graweru laserowego
+                <strong>Atomstack S20 Pro</strong> i programu <strong>LaserGRBL</strong>.
+                Ostateczne wymiary obudowy to 15x27x33 cm, co pozwoliło schować serwer za monitorem</p>
+        </div>
+        <div class="project-img">
+            <img src="assets/minecraft-server2.webp" alt="Obudowa" class="project-photo" />
+        </div>
+        <div class="project-text">
+            <h2>Specyfikacja sprzętu</h2>
+            <ul>
+                <li><strong>CPU:</strong> Intel i5-9600K</li>
+                <li><strong>Chłodzenie:</strong> Deepcool AN600</li>
+                <li><strong>RAM:</strong> 32 GB DDR4 3200MHz</li>
+                <li><strong>Dysk:</strong> SSD M.2 Plextor 128GB</li>
+                <li><strong>Płyta główna:</strong> Asus Z370-PII</li>
+                <li><strong>Zasilacz:</strong> SilentiumPC Vero M1 600W</li>
+            </ul>
+            <p>
+                Chłodzenie musiałem dokupić osobno, ponieważ stare nie mieściło się w obudowie.
+            </p>
+        </div>
+        <div class="project-img">
+            <img src="assets/minecraft-server1.webp" alt="Sprzęt" class="project-photo" />
+        </div>
+        <div class="project-text">
+            <h2>Oprogramowanie i zarządzanie</h2>
+            <p>
+                Serwer działał na systemie <strong>Ubuntu Server</strong>. Do zarządzania instancjami Minecrafta wykorzystałem platformę
+                <a href="https://craftycontrol.com/" target="_blank" class="link">Crafty Control</a>, która umożliwia
+                monitorowanie wydajności, zarządzanie kopiami zapasowymi oraz - na całe szczęście - automatyczne uruchamianie serwerów po restarcie systemu
+                (Niestety nie mam UPS-a, więc każda przerwa w dostawie prądu oznaczała wyłączenie serwera).
+                Kolejnym problemem był dostęp do serwera spoza sieci lokalnej. W routerze standardowo przekierowałem port 25565 na adres swojego serwera,
+                ale ponieważ nie posiadam stałego adresu IP co kilka dni znajomi tracili połączenie. Z pomocą przyszła platforma
+                <a href="https://www.noip.com/" target="_blank" class="link">No-IP</a> w połączeniu z funkcją DynDNS w routerze, 
+                co pozwalało automatycznie aktualizować zmienny adres IP, utrzymywać stały dostęp do serwera oraz korzystać z ich domeny aby nie wpisywać za każdym razem nowego ip serwera.
+            </p>
+            <a href="/zip/obudowa.zip" class="button" download><i class="fas fa-download"></i> Pobierz pliki obudowy (.zip)</a>
+        </div>
+        <p>
+            <strong>Aktualizacja:</strong> Jest to już stara wersja mojego serwera, ale ten projekt pchnął mnie w kierunku budowy mojego obecnego homelabu opartego o 
+            Proxmox. Dzięki niemu nauczyłem się podstaw systemów linuxowych oraz zarządzania siecią.
+        </p>
+    </div>
     <a href="#/projects" class="button">Powrót do listy projektów</a>
 </section>
