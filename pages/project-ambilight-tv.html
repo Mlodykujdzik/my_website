@@ -1,7 +1,46 @@
-<section>
-    <div class="center-content">
-        <h1>Projekt Ambilight</h1>
-        <p>Jeszcze nie ma opisu</p>
-        <a href="#/projects" class="button">Powrót do listy projektów</a>
+<section class="project">
+    <div class="project-content">
+        <div class="project-text">
+            <h1>Ambilight TV</h1>
+            <p>listopad 2024</p>
+            <p>Kilkudniowy projekt mający na celu stworzenie systemu Ambilight do telewizora.</p>
+        </div>
+        <div class="project-img">
+            <img src="assets/ambilight.webp" alt="Projekt Ambilight" class="project-photo" />
+        </div>
+        <div class="project-text">
+            <p>
+                Pomysł na stworzenie systemu Ambilight zrodził się gdy zobaczyłem na YT do czego można użyć Raspberry Pi które zostało mi z czasów studiów.
+                Zamówiłem więc pasek LED WS2812B, zasilacz 5V 10A (lekki overkill wiem, ale pomyślałem że może przyda mi się do czegoś w przyszłości) 
+                oraz kilka innych drobiazgów i zabrałem się do pracy. Ledy pociąłem na odpowienie długości i przymocowałem z tyłu telewizora.
+                Paski LED oczywiście zostały ze sobą zlutowane oraz podłączone do zasilacza. 
+                Aby podłączyć paski LED do Pico użyłem zacisków śrubowych żeby w razie czego łatwo móc wszystko rozmontować
+            </p>
+        </div>
+        <div class="project-img">
+            <img src="assets/back-leds.webp" alt="Tył TV" class="project-photo" />
+        </div>
+        <div class="project-text">
+            <p>
+                Jako że telewizora używam tylko jako monitor w połączeniu z moim prywatnym komputerem zdecydowałem że skorzystam z aplikacji
+                <a href="https://github.com/psieg/Lightpack" target="_blank" class="link">Prismatik</a>, 
+                która przechwytuje obraz z danego ekranu i wysyła odpowiednie kolory do Pico poprzez USB. 
+                Na Pico napisałem prosty program który odbiera dane z USB i steruje diodami LED.
+                Ostateczne efekty można zobaczyć na filmie poniżej.
+            </p>
+            <p>
+                Niestety nie mam kodu który napisałem na Pico, ponieważ nie skopiowałem go przed formatem komputera :(
+            </p>
+        </div>
+        <div class="project-img">
+            <img src="assets/raspberrypi.webp" alt="Raspberry Pi" class="project-photo" />
+        </div>
+        <div class="project-video">
+            <video src="assets/ambilight.mp4" poster="assets/ambilight.webp" controls playsinline muted preload="metadata">
+                <source src="assets/ambilight.mp4" type="video/mp4">
+                    Twoja przeglądarka nie wspiera odtwarzania wideo.
+            </video>
+        </div>
     </div>
+    <a href="#/projects" class="button">Powrót do listy projektów</a>
 </section>

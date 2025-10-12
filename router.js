@@ -4,8 +4,6 @@ const routes = {
     "/home": "pages/home.html",
     "/about": "pages/about.html",
     "/projects": "pages/projects.html",
-    "/hosting": "pages/hosting.html",
-    "/learning": "pages/learning.html",
 };
 
 function getCurrentRoute() {
@@ -22,9 +20,11 @@ async function loadView() {
 
     if (base === "/projects" && param) {
         const staticPages = {
-            "price-tracker": "pages/project-price-tracker.html",
             "minecraft-server": "pages/project-minecraft-server.html",
             "ambilight-tv": "pages/project-ambilight-tv.html",
+            "andromeda": "pages/project-andromeda.html",
+            "nextcloud": "pages/project-nextcloud.html",
+            "new-minecraft-server": "pages/project-new-minecraft-server.html",
         };
 
         const pagePath = staticPages[param];
