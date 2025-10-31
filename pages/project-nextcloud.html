@@ -3,11 +3,33 @@
         <div class="project-text">
             <h1>Prywatna chmura na dane</h1>
             <p>lato 2025</p>
-            <p>Projekt mający na celu stworzenie prywatnej chmury na dane, ponieważ nagrania z drona oraz zdjęcia z aparatu bardzo dużo ważą.</p>
-            <p>Niedługo pojawi się tu cały opis :D</p>
+                        <p>
+                Projekt mający na celu stworzenie własnej, prywatnej chmury opartej o <strong>Nextcloud</strong>. 
+                Pomysł pojawił się z potrzeby większej ilości miejsca na dane, 
+                szczególnie nagrań z drona i zdjęć z aparatu.
+            </p>
+            <p>
+                Chmura została zainstalowana na wirtualnej maszynie z <strong>Ubuntu Server</strong> na moim serwerze.
+                Dzięki <strong>Snap</strong> cały proces konfiguracji <strong>Apache</strong>, <strong>PHP</strong>
+                 i bazy danych <strong>MariaDB</strong> został w dużej mierze zautomatyzowany, 
+                co pozwoliło skupić się na dalszej konfiguracji.
+            </p>
         </div>
         <div class="project-img">
             <img src="assets/nextcloud1.webp" alt="Prywatna chmura na dane" class="project-photo" />
+        </div>
+        <div class="project-text">
+            <p>
+                Nextcloud został skonfigurowany do przechowywania danych na macierzy <strong>ZFS (RAID-Z1)</strong>.
+                Tracę przez to około 33% przestrzeni dyskowej, 
+                ale w przypadku awarii jednego z dysków mogę odzyskać dane bez większych problemów.
+            </p>
+            <p>
+                Dostęp do chmury odbywa się z poziomu przeglądarki pod moją domeną <strong>kujdzik.pl</strong> 
+                lub aplikacji na telefonie, a połączenie jest zabezpieczone certyfikatem od <strong>Let's Encrypt</strong>. 
+                Nextcloud pozwala mi nie tylko synchronizować pliki między urządzeniami, 
+                ale też współdzielić je z innymi na zewnątrz np. jeśli muszę komuś przesłać większy plik.
+            </p>
         </div>
     </div>
     <a href="#/projects" class="button">Powrót do listy projektów</a>
