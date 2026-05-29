@@ -1,18 +1,22 @@
 <section class="project">
     <div class="project-content">
         <div class="project-text">
-            <h1>Prywatna chmura na dane</h1>
-            <p>lato 2025</p>
-                        <p>
-                Projekt mający na celu stworzenie własnej, prywatnej chmury opartej o <strong>Nextcloud</strong>. 
-                Pomysł pojawił się z potrzeby większej ilości miejsca na dane, 
-                szczególnie nagrań z drona i zdjęć z aparatu.
+            <h1>
+                Prywatna chmura na dane
+            </h1>
+            <p>
+                lato 2025
             </p>
             <p>
-                Chmura została zainstalowana na wirtualnej maszynie z <strong>Ubuntu Server</strong> na moim serwerze.
-                Dzięki <strong>Snap</strong> cały proces konfiguracji <strong>Apache</strong>, <strong>PHP</strong>
-                 i bazy danych <strong>MariaDB</strong> został w dużej mierze zautomatyzowany, 
-                co pozwoliło skupić się na dalszej konfiguracji.
+                Projekt polegał na stworzeniu własnej, prywatnej chmury do przechowywania i synchronizacji danych.
+                Główną motywacją była potrzeba bezstratnego udostepniania zdjęć i filmów oraz bezpiecznego przechowywania dużych plików, 
+                takich jak nagrań z drona, zdjęć z aparatu.
+            </p>
+            <p>
+                Nextcloud został uruchomiony na wirtualnej maszynie z <strong>Ubuntu Server</strong> działającej
+                w środowisku <strong>Proxmox</strong>. Do instalacji wykorzystałem wersję opartą o <strong>Snap</strong>,
+                dzięki czemu konfiguracja komponentów takich jak <strong>Apache</strong>, <strong>PHP</strong>
+                oraz <strong>MariaDB</strong> została w dużej mierze zautomatyzowana.
             </p>
         </div>
         <div class="project-img">
@@ -20,15 +24,19 @@
         </div>
         <div class="project-text">
             <p>
-                Nextcloud został skonfigurowany do przechowywania danych na macierzy <strong>ZFS (RAID-Z1)</strong>.
-                Tracę przez to około 33% przestrzeni dyskowej, 
-                ale w przypadku awarii jednego z dysków mogę odzyskać dane bez większych problemów.
+                Dane przechowywane są na macierzy <strong>ZFS</strong> w konfiguracji <strong>RAID-Z1</strong>, co pozwala zachować
+                odporność na awarię jednego z dysków. Kosztem części dostępnej przestrzeni uzyskałem większe
+                bezpieczeństwo danych oraz możliwość dalszej rozbudowy środowiska.
             </p>
             <p>
-                Dostęp do chmury odbywa się z poziomu przeglądarki pod moją domeną <strong>kujdzik.pl</strong> 
-                lub aplikacji na telefonie, a połączenie jest zabezpieczone certyfikatem od <strong>Let's Encrypt</strong>. 
-                Nextcloud pozwala mi nie tylko synchronizować pliki między urządzeniami, 
-                ale też współdzielić je z innymi na zewnątrz np. jeśli muszę komuś przesłać większy plik.
+                Dostęp do chmury został udostępniony przez własną domenę w subdomenie
+                <strong>dysk.kujdzik.pl</strong>, z wykorzystaniem <strong>Nginx reverse proxy</strong>
+                oraz certyfikatu SSL/TLS od <strong>Let's Encrypt</strong>. Dzięki temu z chmury mogę korzystać
+                zarówno przez przeglądarkę, jak i aplikację mobilną.
+            </p>
+            <p>
+                Rozwiązanie umożliwia synchronizację plików między urządzeniami, wygodne udostępnianie większych
+                plików innym osobom oraz zachowanie pełnej kontroli nad miejscem przechowywania danych.
             </p>
         </div>
     </div>

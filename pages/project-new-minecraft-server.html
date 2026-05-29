@@ -1,13 +1,68 @@
 <section class="project">
     <div class="project-content">
         <div class="project-text">
-            <h1>Nowy serwer Minecraft</h1>
+            <h1>Serwer Minecraft 2.0</h1>
             <p>początek 2025</p>
-            <p>Projekt mający na celu ulepszenie starego serwera o dodatkowe możliwości hostowania oraz skorzystania z własnej domeny.</p>
-            <p>Niedługo pojawi się tu cały opis :D</p>
+            <p>
+                Jest to druga iteracja mojego prywatnego serwera Minecraft. Po pierwszej wersji, która działała
+                na osobnym fizycznym komputerze z <strong>Ubuntu Server</strong>, postanowiłem przenieść projekt
+                do bardziej elastycznego środowiska opartego o <strong>Proxmox</strong>.
+            </p>
+            <p>
+                Głównym celem było stworzenie rozwiązania, które pozwoli hostować kilka niezależnych serwerów
+                Minecraft jednocześnie, wygodnie nimi zarządzać oraz udostępniać je znajomym przez własną domenę,
+                bez konieczności ręcznego sprawdzania i podawania aktualnego adresu IP.
+            </p>
         </div>
         <div class="project-img">
             <img src="assets/new-minecraft-server.webp" alt="Nowy serwer Minecraft" class="project-photo" />
+        </div>
+        <div class="project-text">
+            <h2>Nowa infrastruktura</h2>
+            <p>
+                Serwery Minecraft działają obecnie w środowisku wirtualizowanym na <strong>Proxmox</strong>.
+                Dzięki temu mogę łatwiej zarządzać zasobami i tworzyć osobne maszyny wirtualne 
+                dla różnych usług oraz rozwijać całą infrastrukturę bez konieczności przebudowy fizycznego serwera.
+            </p>
+            <p>
+                Do zarządzania instancjami Minecrafta nadal wykorzystuję <strong>Crafty Controller</strong>,
+                który pozwala wygodnie uruchamiać, zatrzymywać i monitorować serwery z poziomu panelu webowego.
+            </p>
+            <h2>Domena, DDNS i reverse proxy</h2>
+            <p>
+                W nowej wersji projektu zrezygnowałem z zewnętrznych domen DDNS typu No-IP na rzecz własnej domeny
+                <strong>kujdzik.pl</strong>. Ponieważ nie posiadam stałego publicznego adresu IP, skonfigurowałem
+                <strong>ddclient</strong>, który automatycznie aktualizuje rekord DNS po każdej zmianie adresu IP.
+            </p>
+            <p>
+                Dzięki temu serwery pozostają dostępne pod stałymi adresami domenowymi, nawet jeśli dostawca internetu
+                zmieni mój publiczny adres IP. Jest to wygodniejsze dla graczy i pozwala lepiej uporządkować dostęp
+                do różnych usług działających w mojej sieci.
+            </p>
+        </div>
+        <div class="project-img">
+            <img src="assets/serwer.webp" alt="Nowy serwer Minecraft" class="project-photo" />
+        </div>
+        <div class="project-text">
+            <p>
+                Poszczególne serwery Minecraft działają na różnych portach, co pozwala mi utrzymywać kilka niezależnych
+                instancji jednocześnie. Ruch do wybranych usług przechodzi przez skonfigurowany <strong>reverse proxy</strong>,
+                dzięki czemu całość jest łatwiejsza do rozbudowy i zarządzania.
+            </p>
+            <h2>Co zmieniło się względem pierwszej wersji?</h2>
+            <p><ul>
+                <li>przeniesienie projektu z pojedynczego fizycznego serwera do środowiska Proxmox,</li>
+                <li>możliwość uruchamiania kilku serwerów Minecraft jednocześnie,</li>
+                <li>wykorzystanie własnej domeny zamiast zewnętrznej domeny DDNS,</li>
+                <li>automatyczna aktualizacja adresu IP przez ddclient,</li>
+                <li>lepsza organizacja usług dzięki reverse proxy i osobnym portom,</li>
+                <li>wygodniejsze zarządzanie instancjami przez Crafty Controller.</li>
+            </ul></p>
+            <p>
+                Ten etap projektu pozwolił mi lepiej zrozumieć praktyczne wykorzystanie wirtualizacji, konfigurację DNS,
+                dynamiczną aktualizację rekordów domeny, przekierowanie portów oraz zarządzanie wieloma usługami
+                działającymi równolegle w jednej infrastrukturze.
+            </p>
         </div>
     </div>
     <a href="#/projects" class="button">Powrót do listy projektów</a>
